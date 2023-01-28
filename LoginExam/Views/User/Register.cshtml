@@ -1,0 +1,16 @@
+@model dynamic
+
+@{
+    ViewBag.Title = "회원가입";
+    Layout = "_Layout";
+}
+
+<form method="post" action="/register-post">
+    <input placeholder="아이디를 입력해주세요" name="id" type="text" />
+    <input placeholder="비밀번호를 입력해주세요" name="password" type="password" />
+    <input placeholder="비밀번호 확인" name="password-check" type="password" />
+    <input placeholder="이름을 입력해주세요" name="name" type="text" />
+    
+    <button>회원가입</button>
+</form>
+

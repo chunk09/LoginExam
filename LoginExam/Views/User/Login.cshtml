@@ -1,0 +1,13 @@
+@model dynamic
+
+@{
+    ViewBag.Title = "로그인";
+    Layout = "_Layout";
+}
+
+<form method="post" action="/login-post">
+    <input name="id" placeholder="아이디를 입력해주세요" type="text" />
+    <input name="password" placeholder="비밀번호를 입력해주세요" type="password"/>
+    
+    <button>로그인</button>
+</form>
